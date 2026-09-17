@@ -16,6 +16,7 @@ const ArrowIcon = () => (
 export default function Contact() {
   return (
     <section id="contact" className="contact-section">
+      <div className="container">
       <FadeIn>
         <SectionHeader title="Contact" subtitle="Get in Touch" />
       </FadeIn>
@@ -54,6 +55,7 @@ export default function Contact() {
             ))}
           </ul>
         </FadeIn>
+      </div>
       </div>
     </section>
   );

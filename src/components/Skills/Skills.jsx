@@ -11,6 +11,7 @@ import "./Skills.css";
 export default function Skills() {
   return (
     <section id="skills">
+      <div className="container">
       <FadeIn>
         <SectionHeader title="Skills" subtitle="Tech Stack" />
       </FadeIn>
@@ -21,6 +22,7 @@ export default function Skills() {
             <SkillCard skill={skill} />
           </FadeIn>
         ))}
+      </div>
       </div>
     </section>
   );

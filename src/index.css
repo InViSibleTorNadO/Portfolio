@@ -57,6 +57,12 @@
 }
 
 /* ─── Base ────────────────────────────────────────────────────────────────── */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -82,9 +88,18 @@ body {
   padding: 0 var(--pad-x);
 }
 
+/* Full-page scroll snap container */
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* offset for fixed header (~64px) */
+  padding-top: 0;
+}
+
 .divider {
-  height: 1px;
-  background: var(--brd);
+  display: none;
 }
 
 /* ─── Shared Button Styles ────────────────────────────────────────────────── */
@@ -140,7 +155,14 @@ body {
 
 /* ─── Section Base ────────────────────────────────────────────────────────── */
 section {
-  padding: 3rem 0;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 0 3rem; /* top pad accounts for fixed header */
+  box-sizing: border-box;
 }
 
 /* ─── Fade-in animation (used by FadeIn.jsx) ─────────────────────────────── */

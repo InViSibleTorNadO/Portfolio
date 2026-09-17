@@ -41,26 +41,14 @@ export default function App() {
         onMenuOpen={() => setMenuOpen(true)}
       />
 
-      {/* Page content */}
+      {/* Page content — each section snaps to full viewport */}
       <main>
-        <div className="container">
-          <Hero />
-
-          <div className="divider" />
-          <Projects />
-
-          <div className="divider" />
-          <Experience />
-
-          <div className="divider" />
-          <Skills />
-
-          <div className="divider" />
-          <Stats />
-
-          <div className="divider" />
-          <Contact />
-        </div>
+        <Hero />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Stats />
+        <Contact />
       </main>
 
       <Footer />

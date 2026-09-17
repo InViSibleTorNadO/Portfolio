@@ -32,6 +32,7 @@ export default function Projects() {
 
   return (
     <section id="projects">
+      <div className="container">
       <FadeIn>
         <SectionHeader title="Projects" subtitle="Selected Work" />
       </FadeIn>
@@ -80,6 +81,7 @@ export default function Projects() {
           </button>
         </div>
       </FadeIn>
+      </div>
     </section>
   );
 }
