@@ -22,9 +22,9 @@ const DownloadIcon = () => (
 );
 
 const META_ITEMS = [
-  { label: "Role",     value: "Software Engineer" },
+  { label: "Role", value: "Software Engineer" },
   { label: "Location", value: "Pune, India · Global 🌐" },
-  { label: "Status",   value: null, isStatus: true },
+  { label: "Status", value: null, isStatus: true },
 ];
 
 /**
@@ -75,7 +75,7 @@ export default function Hero() {
               <a href="mailto:beersheoran06@gmail.com" className="btn btn-primary" id="hero-contact-btn">
                 <EmailIcon /> Contact Me
               </a>
-              <a href="#" className="btn btn-secondary" id="hero-resume-btn">
+              <a href="https://drive.google.com/uc?export=download&id=1mWaiZ5KGlOBJhD_uGlUK7u6r-i1JjQYF" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" id="hero-resume-btn">
                 <DownloadIcon /> Resume
               </a>
               <a
