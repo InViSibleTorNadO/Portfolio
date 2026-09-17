@@ -1,0 +1,48 @@
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.mobile-menu--open {
+  display: flex;
+}
+
+.mobile-menu a {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--tx);
+  text-decoration: none;
+  transition: opacity var(--tr);
+}
+.mobile-menu a:hover {
+  opacity: 0.5;
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--brd);
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  cursor: pointer;
+  font-family: var(--font);
+  transition: all var(--tr);
+}
+.mobile-menu__close:hover {
+  color: var(--tx);
+}
