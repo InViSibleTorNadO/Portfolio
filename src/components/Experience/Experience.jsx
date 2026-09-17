@@ -11,7 +11,6 @@ import "./Experience.css";
 export default function Experience() {
   return (
     <section id="experience">
-      <div className="container">
       <FadeIn>
         <SectionHeader
           title="Experience"
@@ -25,7 +24,6 @@ export default function Experience() {
             <ExperienceItem item={item} />
           </FadeIn>
         ))}
-      </div>
       </div>
     </section>
   );

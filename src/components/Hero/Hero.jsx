@@ -35,7 +35,6 @@ const META_ITEMS = [
 export default function Hero() {
   return (
     <section id="hero" className="hero">
-      <div className="container">
       {/* Name banner */}
       <div className="hero__title-row">
         <h1 className="hero__name">Beer Singh</h1>

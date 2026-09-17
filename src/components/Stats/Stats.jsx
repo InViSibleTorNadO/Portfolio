@@ -156,7 +156,6 @@ export default function Stats() {
 
   return (
     <section id="stats">
-      <div className="container">
       <FadeIn>
         <SectionHeader title="Coding Activity" subtitle="Codolio · @InvisibleTornado" />
       </FadeIn>
@@ -244,7 +243,6 @@ export default function Stats() {
 
         </div>
       </FadeIn>
-      </div>
     </section>
   );
 }
